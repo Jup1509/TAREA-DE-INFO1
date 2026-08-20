@@ -1,0 +1,277 @@
+#EJERCICIOS DE ESTRUCTURA SECUENCIALES
+#1 
+número = float(input("Ingrese un número: "))
+cuadrado = número ** 2
+cubo = número ** 3
+
+print(f"El cuadrado de {número} es: {cuadrado:.2f}")
+print(f"El cubo de {número} es: {cubo:.2f}") 
+
+#2
+sueldo1 = float(input("Ingrese el sueldo del primer empleado: "))
+sueldo2 = float(input("Ingrese el sueldo del segundo empleado: "))
+sueldo3 = float(input("Ingrese el sueldo del tercer empleado: "))
+
+nuevo_sueldo1 = sueldo1 * 1.10
+nuevo_sueldo2 = sueldo2 * 1.12
+nuevo_sueldo3 = sueldo3 * 1.15
+
+print(f"El nuevo sueldo del primer empleado es: {nuevo_sueldo1}")
+print(f"El nuevo sueldo del segundo empleado es: {nuevo_sueldo2}")
+print(f"El nuevo sueldo del tercer empleado es: {nuevo_sueldo3}")
+
+
+#3
+nota1 = float(input("Ingrese la nota del primer examen: "))
+nota2 = float(input("Ingrese la nota del segundo examen: "))
+nota3 = float(input("Ingrese la nota del tercer examen: "))
+nota4 = float(input("Ingrese la nota del tercer examen: "))
+nota5 = float(input("Ingrese la nota del tercer examen: "))
+
+promedio = (nota1*0.3) + (nota2*0.15) + (nota3*0.15) + (nota4*0.2) + (nota5*0.2)
+
+print(f"El promedio del curso es: {promedio}")
+
+#4
+nota1 = float(input("Ingrese la nota del primer examen: "))
+nota2 = float(input("Ingrese la nota del segundo examen: "))
+nota3 = float(input("Ingrese la nota del tercer examen: "))
+nota4 = float(input("Ingrese la nota del tercer examen: "))
+nota5 = float(input("Ingrese la nota del tercer examen: "))
+
+promedio = (nota1*0.3) + (nota2*0.15) + (nota3*0.15) + (nota4*0.2) + (nota5*0.2)
+
+print(f"El promedio del curso es: {promedio}")
+
+#5
+radio = float(input("Ingrese el radio de la circunferencia: "))
+
+pi = 3.14149
+área= pi * (radio**2)
+perímetro = 2*pi*radio 
+
+print(f"El área y perímetro de la circunferencia son: {área} y {perímetro} respectivamente ")
+
+#6
+grado = float(input("Ingresa un número: "))
+
+pi = 3.14159
+
+grados_a_radianes = grado * (pi/180)
+
+print(f"El resultado en radianes es: {grados_a_radianes}")
+
+#7
+celsius = float(input("Ingrese un número: ")) 
+
+celsius_a_fahrenheit = (celsius * 9/5) + 32
+celsius_a_kelvin = celsius + 273.15
+
+print(f"El resultado en fahrenheit es: {celsius_a_fahrenheit}°F")
+print(f"El resultado en kelvin es: {celsius_a_kelvin}K")
+
+
+#EJERCICIOS DE ESTRUCTURA CONDICIONALES
+#1 (y se repite con el 6)
+A = float(input("Ingrese un número: "))
+B = float(input("Ingrese otro número: "))
+
+
+if A > B:
+    print("A es mayor que B")
+elif A < B:
+    print("B es mayor que A")
+else:
+    print("A y B son iguales")  
+
+
+#2 Promedio ponderado
+nota1 = float(input("Ingrese la primera nota: "))
+nota2 = float(input("Ingrese la segunda nota: "))
+nota3 = float(input("Ingrese la tercera nota: "))
+nota4 = float(input("Ingrese la cuarta nota: "))
+nota5 = float(input("Ingrese la quinta nota: "))
+peso1 = 0.30
+peso2 = 0.15
+peso3 = 0.15
+peso4 = 0.20
+peso5 = 0.20
+
+promedio_ponderado = (nota1 * peso1 + nota2 * peso2 + nota3 * peso3 + nota4 * peso4 + nota5 * peso5) / (peso1 + peso2 + peso3 + peso4 + peso5)
+if promedio_ponderado >= 3.0:
+   print("Aprobado")
+
+print(f"El promedio ponderado es: {promedio_ponderado}")
+
+
+#3
+Y = float(input("Ingrese un número: "))
+Z = float(input("Ingrese otro número: "))
+
+if Y > Z:
+    X = 1 
+elif Y < Z:
+    X = 3
+else:
+    X = 2
+print(f"El valor de X es: {X}")
+
+#4 (Y se repite en el 7)
+
+A = int(input("Ingrese un número: "))
+B = int(input("Ingrese otro número: "))
+C = int(input("Ingrese otro número: "))
+
+if A >= B and A >= C:
+    if B >= C:
+        print(f"El orden de los números es: {A}, {B}, {C}")
+    else:
+        print(f"El orden de los números es: {A}, {C}, {B}")
+elif B >= A and B >= C:
+    if A >= C:
+        print(f"El orden de los números es: {B}, {A}, {C}")
+    else:
+        print(f"El orden de los números es: {B}, {C}, {A}")
+else:
+    if A >= B:
+        print(f"El orden de los números es: {C}, {A}, {B}")
+    else:
+        print(f"El orden de los números es: {C}, {B}, {A}")
+
+#5
+Número_de_inscripción = int(input("Ingrese su número de inscripción: "))
+Nombres = input("Ingrese sus nombres: ")
+Patrimonio = float(input("Ingrese su patrimonio: "))
+Estrato = int(input("Ingrese su estrato: "))
+
+Pago_base = 50000
+if Patrimonio > 2000000 and Estrato > 3:
+    Pago_final = Pago_base + (Patrimonio * 0.03)
+else:
+    Pago_final = Pago_base  
+print(f"Número de inscripción: {Número_de_inscripción}")
+print(f"Nombres: {Nombres}")
+print(f"Pago de matrícula: {Pago_final}$")
+
+#8
+
+peso1= float(input("Peso esfera 1: "))
+tamaño1= float(input("Tamaño esfera 1: "))
+
+peso2= float(input("Peso esfera 2: "))
+tamaño2= float(input("Tamaño esfera 2: "))
+
+peso3= float(input("Peso esfera 3: "))
+tamaño3= float(input("Tamaño esfera 3: "))
+
+densidad1= peso1/tamaño1
+densidad2= peso2/tamaño2
+densidad3= peso3/tamaño3
+
+if densidad1 > densidad2 and densidad1 > densidad3:
+    print("La esfera 1 es la más densa")
+elif densidad2 > densidad3:
+    print("La esfera 2 es la más densa")
+else:
+    print("La esfera 3 es la más densa")
+
+#9
+
+d1 = float(input("Ingrese el primer dato: "))
+d2 = float(input("Ingrese el segundo dato: "))
+d3 = float(input("Ingrese el tercer dato: "))
+d4 = float(input("Ingrese el cuarto dato: "))
+
+mayor= max(d1,d2,d3,d4)
+menor= min(d1,d2,d3,d4)
+
+suma = mayor + menor
+print(f"La suma del mayor y menor dato es: {suma}")
+
+#Repaso y Plus
+num1 = float(input("Ingrese el primer número: "))
+num2 = float(input("Ingrese el segundo número: "))
+
+#sumar 4 veces 3 a num1 reasignando
+num1 = num1 + (4 * 3)
+
+#multiplicar 3 veces por 3 a num2 reasignando
+num2 = num2 * (3 * 3)
+
+#solicitar los nombres usando formateo de string
+nombre1 = input("Ingrese el nombre del primer número: ")
+nombre2 = input("Ingrese el nombre del segundo número: ")
+
+#tres formas de formateo de strings en phyton
+print("Forma1 (%%): El valor de %s es %f y el de %s es %f" % (nombre1, num1, nombre2, num2))
+print("Forma2 (.format): El valor de {} es {} y el de {} es {}".format(nombre1, num1, nombre2, num2))
+print(f"Forma3 (f-string): El valor de {nombre1} es {num1} y el de {nombre2} es {num2}")
+
+#Ejercicios de ciclos
+
+#1
+a = int(input("Ingrese el primer entero: "))
+b = int(input("Ingrese el segundo entero: "))
+
+resultado = 0
+
+for i in range (b): 
+    resultado = resultado + a
+
+print(f"El resultado de la multiplicación es: {resultado}")
+
+#2 
+número_notas = int(input("¿Cuántas notas se va a ingresar?: "))
+suma_notas = 0
+
+for i in range(número_notas):
+    nota = float(input(f"Ingrese la nota {i+1} (de 0 a 5): "))
+    suma_notas = suma_notas + nota
+
+    promedio = suma_notas / número_notas
+    print(f"El promedio de la materia es: {promedio}")
+
+#3
+n = int(input("Ingrese el valor de n (máximo 9): "))
+x = int(input("Ingrese el valor de x (máximo 9): "))
+
+for i in range (n+1):
+    resultado = i * x
+    print(f"{i} ^ {x} = {resultado}")
+
+#4
+N = int(input("Ingrese el valor límite de N: "))
+suma_impares = 0
+for i in range(1, N+1):
+    if i % 2 != 0:
+        suma_impares = suma_impares + i
+print(f"La suma de los números impares es: {suma_impares}")
+
+#5
+while True: 
+    número = int(input("Ingrese un número entero entre 0 y 20: "))
+    if número < 0 or número > 20:
+        print("Error: el número debe estar entre 0 y 20.")
+    else:
+        factorial = 1 
+        for i in range(1, número + 1):
+            factorial = factorial * i
+        print(f"El factorial de {número} es: {factorial}")
+
+    opción = input("¿Desea calcular otro factorial? (s/n): ")
+    if opción.lower() != 's':
+        break
+
+#6
+a = int(input("Ingrese el valor de a: "))
+n = int(input("Ingrese el número en términos de n: "))
+sumatoria = 0
+for i in range(1, n + 1):
+    termino = (1 / a) ** i
+    sumatoria = sumatoria + termino
+print(f"La sumatoria de la serie es: {sumatoria}")
+
+
+
+
+
